@@ -21,11 +21,11 @@ import { HiOutlineDocumentText,HiOutlineUsers } from "react-icons/hi";
             <div className=" ">
                 {
                     bookStored.map (book => 
-                        <div key={book.bookId} className="grid grid-cols-7  border my-5 rounded-md">
-        <div className=" flex rounded-lg col-span-2 justify-center items-center bg-[#F3F3F3] my-10 mx-5">
+                        <div key={book.bookId} className="grid grid-cols-1 lg:grid-cols-7  border my-5 rounded-md mx-3 lg:mx-0">
+        <div className=" flex rounded-lg col-span-2 justify-center items-center bg-[#F3F3F3] lg:my-10 my-5 mx-5">
             <img className="w-[150px] h-[200px] my-3" src={book.image} alt={book.bookName}/>
         </div>
-        <div className="col-span-5 space-y-2 my-10 text-[#131313CC] mx-4 ">
+        <div className="col-span-5 space-y-2 my-5  lg:my-10 text-[#131313CC] mx-4 ">
              <h1 className="text-4xl font-bold">{book.bookName}</h1>
              <p className="text-xl font-medium">By:{book.author}</p>
              <p>{book.category}</p>

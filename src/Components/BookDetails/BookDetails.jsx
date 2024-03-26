@@ -21,11 +21,11 @@ const BookDetails = () => {
         }
    
     return (
-        <div className="grid grid-cols-7">
+        <div className="grid grid-cols-1 lg:grid-cols-7">
         <div className=" flex rounded-lg col-span-3 justify-center items-center bg-[#F3F3F3] my-10 mx-5">
             <img className="w-[200px] h-[300px] my-3" src={image} alt={bookName}/>
         </div>
-        <div className="col-span-4 space-y-2 my-10 text-[#131313CC] ">
+        <div className="col-span-4 space-y-2 my-10 text-[#131313CC] mx-5">
              <h1 className="text-4xl font-bold">{bookName}</h1>
              <p className="text-xl font-medium">By:{author}</p>
              <hr />

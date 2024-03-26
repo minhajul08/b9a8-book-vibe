@@ -1,0 +1,81 @@
+[
+    {
+    "bookId": 1,
+    "bookName": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "image": "https://i.ibb.co/Hq7XLM1/The-Great-Gatsby.jpg",
+    "review": "A mesmerizing portrayal of the Jazz Age, showcasing the pursuit of the American Dream through the eyes of Jay Gatsby.",
+    "totalPages": 180,
+    "rating": 4.5,
+    "category": "Classic",
+    "tags": ["Romance", "Tragedy", "American Literature"],
+    "publisher": "Scribner",
+    "yearOfPublishing": 1925
+    },
+    {
+    "bookId": 2,
+    "bookName": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "image": "https://i.ibb.co/sPRSDjg/To-Kill-a-Mockingbird.jpg",
+    "review": "A poignant narrative confronting racial injustice and moral growth, seen through the perspective of Scout Finch in the 1930s American South.",
+    "totalPages": 281,
+    "rating": 4.7,
+    "category": "Fiction",
+    "tags": ["Social Issues", "Coming of Age", "Legal Drama"],
+    "publisher": "J. B. Lippincott & Co.",
+    "yearOfPublishing": 1960
+    },
+    {
+    "bookId": 3,
+    "bookName": "1984",
+    "author": "George Orwell",
+    "image": "https://i.ibb.co/c1f5rFS/George-Orwell.jpg",
+    "review": "A dystopian masterpiece exploring the dangers of totalitarianism and the erosion of individual freedoms in a surveillance state.",
+    "totalPages": 328,
+    "rating": 4.6,
+    "category": "Science Fiction",
+    "tags": ["Dystopian", "Political", "Philosophical"],
+    "publisher": "Secker & Warburg",
+    "yearOfPublishing": 1949
+    },
+    {
+    "bookId": 4,
+    "bookName": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "image": "https://i.ibb.co/wSBdQmX/catcher.jpg",
+    "review": "A rebellious journey of teenage angst and alienation, epitomizing the struggle for identity amidst societal pressures.",
+    "totalPages": 224,
+    "rating": 4.4,
+    "category": "Literary Fiction",
+    "tags": ["Coming of Age", "Isolation", "Youth Culture"],
+    "publisher": "Little, Brown and Company",
+    "yearOfPublishing": 1951
+    },
+    {
+    "bookId": 5,
+    "bookName": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "image": "https://i.ibb.co/H2gYVbc/pride.jpg",
+    "review": "A timeless romance unfolding in the Regency era, characterized by wit, social commentary, and the complexities of love and societal expectations.",
+    "totalPages": 279,
+    "rating": 4.8,
+    "category": "Romance",
+    "tags": ["Regency", "Satire", "Relationships"],
+    "publisher": "T. Egerton, Whitehall",
+    "yearOfPublishing": 1813
+    },
+    {
+    "bookId": 6,
+    "bookName": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "image": "https://i.ibb.co/ZfMtBTD/The-Hobbit-trilogy-dvd-cover.jpg",
+    "review": "An enchanting adventure of Bilbo Baggins, filled with dwarves, dragons, and the quest for treasure, set in the magical realm of Middle-earth.",
+    "totalPages": 310,
+    "rating": 4.9,
+    "category": "Fantasy",
+    "tags": ["Adventure", "Magic", "Epic"],
+    "publisher": "George Allen & Unwin",
+    "yearOfPublishing": 1937
+    }
+    ]
+    

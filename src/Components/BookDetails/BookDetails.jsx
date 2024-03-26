@@ -1,13 +1,24 @@
-import { MdStarOutline } from "react-icons/md";
-import { Link, useLoaderData, useParams } from "react-router-dom";
+import {  useLoaderData, useParams } from "react-router-dom";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { saveReadeBook } from "../../Utility/LocalStroage";
 
 const BookDetails = () => {
     const books = useLoaderData ();
     const {id} = useParams ();
-    // const book = books.find(book => book.id ===id)
-    const book =books.find(book =>book.bookId ==id)
+     const idInt =parseInt (id)
+    const book =books.find(book =>book.bookId ===idInt)
     console.log (book);
-    const {bookId,image,bookName,author,category,rating,tags,review,totalPages,publisher,yearOfPublishing} = book;
+    const {image,bookName,author,category,rating,tags,review,totalPages,publisher,yearOfPublishing} = book;
+
+       const handelReadBook = () => {
+        saveReadeBook (idInt);
+         toast ('book added')
+       }
+       
+        const handelWishList = () => {
+            toast ('wishlist')
+        }
    
     return (
         <div className="grid grid-cols-7">
@@ -21,21 +32,22 @@ const BookDetails = () => {
              <p>{category}</p>
              <hr />
              <p><span className="font-bold">Review: </span>{review}</p>
-             <div className="flex gap-6">
+             <div className="flex gap-4">
              <p className="mt-5">Tags:</p>
-             <p className="mt-5"> #{tags[0]}</p>
-             <p className="mt-5"> #{tags[1]}</p>
+             <p className="mt-5 bg-[#23BE0A0D] px-4 rounded-xl text-[#23BE0A]"> #{tags[0]}</p>
+             <p className="mt-5 bg-[#23BE0A0D] px-4 rounded-xl text-[#23BE0A]"> #{tags[1]}</p>
              </div>
              <hr />
-             <p>Number of pages<span className="font-bold ml-9">{totalPages}</span></p>
-             <p>Number of pages<span className="font-bold ml-9">{publisher}</span></p>
-             <p>Number of pages<span className="font-bold ml-9">{yearOfPublishing}</span></p>
-             <p>Number of pages<span className="font-bold ml-9">{rating}</span></p>
-             <button className="btn border-[#1313134D] btn-ghost">Read</button>
-             <button className="btn bg-[#50B1C9] border-0 ml-5">Wishlist</button>
+             <p>Number of pages<span className="font-bold lg:ml-16">{totalPages}</span></p>
+             <p>Publisher: <span className="font-bold lg:ml-[113px]">{publisher}</span></p>
+             <p>Year of Publishing: <span className="font-bold lg:ml-[50px]">{yearOfPublishing}</span></p>
+             <p>Rating: <span className="font-bold lg:ml-[133px]">{rating}</span></p>
+             <button onClick={handelReadBook} className="btn border-[#1313134D]  btn-ghost hover:bg-[#23BE0A] lg:w-[100px]">Read</button>
+             <button onClick={handelWishList} className="btn bg-[#50B1C9] border-0 ml-7 lg:w-32 text-white">Wishlist</button>
         </div>
-            
+        <ToastContainer />
       </div>
+       
     );
 };
 

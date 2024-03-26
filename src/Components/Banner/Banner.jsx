@@ -8,7 +8,7 @@ const Banner = () => {
 //      }
 
     return (
-        <div className="lg:w-[1200px] flex  bg-[#1313130D] justify-center items-center "> 
+        <div className="lg:w-[1200px] flex  bg-[#1313130D] justify-center items-center rounded-lg my-5"> 
             <div className="lg:w-[526px]">
                 <h1 className="text-5xl font-bold ">Books to freshen up your bookshelf</h1>
                 <NavLink to={'/listedBooks'}><button className="btn mt-10 bg-green-600 border-0">View The List</button></NavLink>

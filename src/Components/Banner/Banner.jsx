@@ -8,13 +8,13 @@ const Banner = () => {
 //      }
 
     return (
-        <div className="lg:w-[1200px] flex  bg-[#1313130D] justify-center items-center mx-2 lg:mx-0 rounded-lg my-5"> 
+        <div className="lg:w-[1200px] flex  bg-[#1313130D] justify-center items-center mx-3 lg:mx-0 rounded-lg my-5"> 
             <div className="lg:w-[526px] mx-3">
-                <h1 className="lg:text-5xl text-2xl font-bold ">Books to freshen up your bookshelf</h1>
-                <NavLink to={'/listedBooks'}><button className="btn mt-5 lg:mt-10 bg-green-600 border-0">View The List</button></NavLink>
+                <h1 className="lg:text-5xl text-3xl font-bold ">Books to freshen up your bookshelf</h1>
+                <NavLink to={'/listedBooks'}><button className="btn mt-5 lg:mt-10 bg-green-600 border-0 text-white">View The List</button></NavLink>
             </div>
-            <div className="">
-                <img className="" src={img} alt="" />
+            <div className="mx-3 lg:mx-0">
+                <img className="w-[300px] h-[350px] object-contain my-10 " src={img} alt="" />
             </div>
         </div>
     );

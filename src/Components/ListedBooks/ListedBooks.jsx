@@ -13,11 +13,11 @@ import { HiOutlineDocumentText,HiOutlineUsers } from "react-icons/hi";
             const booksListed =listedBooks.filter(listedBook => storedBookIds.includes (listedBook.bookId))
             setBookStored (booksListed)
         }
-     } ,[])
+     } ,[listedBooks])
       
     return (
         <div>
-            <h3>Listed Books{bookStored.length}</h3>
+            <button className="btn btn-ghost">Listed Books</button> <button className="btn btn-ghost">Wishlist</button>
             <div className=" ">
                 {
                     bookStored.map (book => 

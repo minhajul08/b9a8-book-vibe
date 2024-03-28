@@ -44,16 +44,6 @@ const ListedBooks = () => {
         }
     }, [listedBooks])
 
-    // const ascending = () => {
-    //     let data = [...bookStored]
-    //     console.log ('data',data)
-    //     if (data.length > 0){
-    //        let result = data.sort ((a,b) =>(b.rating -a.rating))
-    //        console.log ('assending',result)
-    //        setDisplayBook (result);
-    //     }
-    // }
-
 
     return (
         <div>

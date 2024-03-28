@@ -24,7 +24,7 @@ const PageToRead = () => {
 
 
   useEffect (() => {
-    fetch ('/public/books.json')
+    fetch ('/books.json')
     .then (res => res.json ())
     .then (data =>  {
        const readData = data
@@ -57,7 +57,7 @@ const PageToRead = () => {
       }}
     >
       <CartesianGrid strokeDasharray="3 3" />
-      <XAxis dataKey="bookName" textAnchor={'inherit'} />
+      <XAxis dataKey="bookName"  />
       <YAxis dataKey="totalPages" />
       <Bar dataKey="totalPages"  fill="#8884d8" shape={<TriangleBar />} label={{ position: 'top' }}>
         {readPage.map((entry, index) => (
